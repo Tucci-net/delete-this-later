@@ -1,6 +1,6 @@
 <nav>
     <a href="/" class="homeLogo">
-        <img id="Logo" src="assets/Pacalogo.png" height="75px" alt="Home">
+        <img id="Logo" src="/assets/Pacalogo.png" height="75px" alt="Home">
     </a>
 
   <button id="hamburger" aria-label="Toggle menu">
@@ -14,27 +14,49 @@
     <li><a href="/blog">Blog</a></li>
     <li>
       <a href="https://github.com/Tucci-net">
-        <img id="githublogo" src="assets/github-static.png" height="20rem" alt="Github">
+        <img id="githublogo" src="/assets/github-static.png" height="20rem" alt="Github">
       </a>
     </li>
     <li>
       <a href="https://www.instagram.com/tucci_rock/">
-        <img id="instalogo" src="assets/instagram-static.png" height="20rem" alt="Instagram">
+        <img id="instalogo" src="/assets/instagram-static.png" height="20rem" alt="Instagram">
       </a>
     </li>
   </ul>
 </nav>
 
 <style>
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  #nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #nav-links li {
+    display: flex;
+  }
+
+  #nav-links img {
+    height: 30px;
+    width: auto;
+  }
+
   #hamburger {
     display: none;
   }
 
   @media (max-width: 775px) {
     nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding: 10px 20px;
       position: fixed;
       top: 0;
